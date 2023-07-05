@@ -1,0 +1,90 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5aef28a1-e7b3-4de5-9931-fc65b2104dcb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Proyecto\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>POOGpo2</Name>
+    <RootNamespace>POOGpo2</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Clases\polimorfismo02.py" />
+    <Compile Include="Clases\polimorfismo01.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog01_persona.py" />
+    <Compile Include="Clases\prog02_parametros.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog04_destructor.py" />
+    <Compile Include="Clases\prog03_constructor.py" />
+    <Compile Include="Clases\prog05_encapsulamiento.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog10_herencia_metodos_atributos_propios.py" />
+    <Compile Include="Clases\prog06_herencia.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog13_computadora_lap_escritorio.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog07_ejercicio_01_computadora.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog12_herencia_varios_niveles.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog11_persona_con_PideValor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog09_importavalor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog08_pidevalor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\prog14_herencia_multiple.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Proyecto\videos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Proyecto\files.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Proyecto\pidevalor.py" />
+    <Compile Include="Proyecto\main.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
+    <Folder Include="Proyecto\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
